@@ -13,7 +13,7 @@ import icons from '../../img/icons.svg';
 // So that in case of quantity are 0.5 cups or 3.5 cups etc... then it gets converted to fractions like 1/5 cups or 3/5 cups etc...
 // import Fraction from 'fractional'; // otherwise we need to do new Fraction.Fraction(ing.quantity)
 // as Fraction is inside Fraction
-import {Fraction} from 'fractional'; // Can Also use => '../../../node_modules/fractional' in place of 'fractional' 
+// import {Fraction} from 'fractional'; // Can Also use => '../../../node_modules/fractional' in place of 'fractional' 
 // now we need to do new Fraction(ing.quantity)
 
 
@@ -327,7 +327,7 @@ class RecipeView {
             <svg class="recipe__icon">
             <use href="${icons}#icon-check"></use>
             </svg>
-            <div class="recipe__quantity">${ing.quantity ? new Fraction(ing.quantity).toString() : ""}</div>
+            <div class="recipe__quantity">${ing.quantity ? ing.quantity : ""}</div>
             <div class="recipe__description">
                 <span class="recipe__unit">${ing.unit}</span>
                 ${ing.description}
