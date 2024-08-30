@@ -5,3 +5,29 @@
 @import 'searchResults';
 @import 'recipe';
 @import 'upload';
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+.block-app-message {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .container {
+        display: none !important;
+    }
+    .block-app-message {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        width: 100vw;
+        background-color: #FFA500;
+        color: #FFFFFF; 
+        padding: 20px; 
+        text-align: center;
+    }
+
+  }
